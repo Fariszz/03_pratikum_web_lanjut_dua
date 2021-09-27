@@ -21,8 +21,12 @@ class ProductFactory extends Factory
      */
     public function definition()
     {
+        $name = $this->faker->name;
         return [
-            //
+            'name' => $name,
+            'stock' => $this->faker->numerify('#'),
+            'harga' => $this->faker->numerify('#####'),
+            'description' => $this->faker->text
         ];
     }
 }
