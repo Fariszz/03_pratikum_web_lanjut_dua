@@ -1,3 +1,7 @@
 @extends('layouts.main')
 
-Ini adalah Product index
+
+@section('container')
+    Ini adalah Product index
+
+@endsection

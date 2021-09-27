@@ -35,6 +35,7 @@ Route::prefix('program')->group(function(){
 });
 
 Route::prefix('product')->group(function(){
+    Route::get('/', [ProductController::class, 'index']);
     Route::get('/product-1', [ProductController::class, 'product1']);
     Route::get('/product-2', [ProductController::class, 'product2']);
 });
