@@ -29,6 +29,7 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::prefix('program')->group(function(){
+    Route::get('/', [ProgramController::class, 'index']);
     Route::get('/program-1', [ProgramController::class, 'program1'])->name('program1');
     Route::get('/program-2', [ProgramController::class, 'program2'])->name('program2');
 });
